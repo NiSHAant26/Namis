@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Header */
+/* Header styling */
 header {
     text-align: center;
     padding: 20px 0;
@@ -25,21 +25,23 @@ header h1 {
     color: #2c3e50;
 }
 
+/* Slogan styling */
 header .tagline {
     font-size: 1.2em;
     color: #16a085;
     margin-bottom: 15px;
 }
 
-/* Logo styling */
+/* Logo styling - round and centered */
 header .logo {
-    width: 120px; /* Adjust size as needed */
-    height: 120px; /* Make height equal to width for perfect circle */
+    width: 120px;       /* size of the logo */
+    height: 120px;      /* same as width for perfect circle */
     display: block;
-    margin: 0 auto 10px; /* Center the logo and give spacing */
-    border-radius: 50%; /* Makes the logo round */
-    object-fit: cover; /* Ensures image fits nicely in the circle */
-    border: 2px solid #16a085; /* Optional: adds a border around logo */
+    margin: 0 auto 10px;
+    border-radius: 50%; /* makes it round */
+    object-fit: cover;  /* fills the circle properly */
+    border: 2px solid #16a085; /* optional border */
+    background-color: #ffffff;  /* optional background if logo has transparency */
 }
 
 /* Navigation */
@@ -89,3 +91,4 @@ footer {
     margin-top: 30px;
     color: #7f8c8d;
 }
+
