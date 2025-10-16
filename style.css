@@ -1,46 +1,80 @@
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  margin: 0;
-  padding: 0;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Header styles */
+/* Body */
+body {
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
 header {
-  background-color: #0a7ac4;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
-  margin: 0;
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    color: #16a085;
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 20px;
 }
 
 nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
+    text-decoration: none;
+    color: #2980b9;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    color: #e67e22;
 }
 
-/* Main content styles */
-main {
-  padding: 20px;
-  text-align: center;
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Footer styles */
+.welcome h2 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.welcome .contact a {
+    color: #16a085;
+    text-decoration: none;
+}
+
+.welcome .contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+    text-align: center;
+    margin-top: 30px;
+    color: #7f8c8d;
 }
