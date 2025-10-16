@@ -11,10 +11,36 @@ body {
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-/* Header styling */
+/* Top bar */
+.top-bar {
+    background-color: #16a085;
+    color: #fff;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    align-items: center;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+.top-bar-left span {
+    font-weight: bold;
+}
+
+/* Header */
 header {
     text-align: center;
     padding: 20px 0;
@@ -25,7 +51,6 @@ header h1 {
     color: #2c3e50;
 }
 
-/* Slogan styling */
 header .tagline {
     font-size: 1.2em;
     color: #16a085;
@@ -34,14 +59,14 @@ header .tagline {
 
 /* Logo styling - round and centered */
 header .logo {
-    width: 120px;       /* size of the logo */
-    height: 120px;      /* same as width for perfect circle */
+    width: 120px;
+    height: 120px;
     display: block;
     margin: 0 auto 10px;
-    border-radius: 50%; /* makes it round */
-    object-fit: cover;  /* fills the circle properly */
-    border: 2px solid #16a085; /* optional border */
-    background-color: #ffffff;  /* optional background if logo has transparency */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #16a085;
+    background-color: #ffffff;
 }
 
 /* Navigation */
@@ -76,19 +101,9 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.contact a {
-    color: #16a085;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
 /* Footer */
 footer {
     text-align: center;
     margin-top: 30px;
     color: #7f8c8d;
 }
-
