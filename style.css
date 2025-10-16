@@ -31,6 +31,14 @@ header .tagline {
     margin-bottom: 15px;
 }
 
+/* Logo styling */
+header .logo {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the logo and give spacing */
+}
+
 /* Navigation */
 nav {
     margin-bottom: 20px;
