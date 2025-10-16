@@ -11,9 +11,9 @@ body {
   color: #333;
 }
 
-/* Top Header Bar */
+/* Top Green Bar */
 .top-bar {
-  background-color: #16a085; /* Green */
+  background-color: #16a085;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@ body {
   z-index: 1000;
 }
 
-/* Left side (Logo + Name) */
+/* Logo and company name */
 .header-left {
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@ body {
   font-weight: 600;
 }
 
-/* Right side (Phone + Button) */
+/* Right side (Phone + Book button) */
 .header-right {
   display: flex;
   align-items: center;
@@ -75,6 +75,29 @@ body {
 
 .book-btn:hover {
   background: #f0f0f0;
+}
+
+/* White Navigation Bar */
+.main-nav {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+  color: #16a085;
 }
 
 /* Hero section */
@@ -149,5 +172,10 @@ footer {
   .header-right {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
