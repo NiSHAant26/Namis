@@ -34,9 +34,12 @@ header .tagline {
 /* Logo styling */
 header .logo {
     width: 120px; /* Adjust size as needed */
-    height: auto;
+    height: 120px; /* Make height equal to width for perfect circle */
     display: block;
     margin: 0 auto 10px; /* Center the logo and give spacing */
+    border-radius: 50%; /* Makes the logo round */
+    object-fit: cover; /* Ensures image fits nicely in the circle */
+    border: 2px solid #16a085; /* Optional: adds a border around logo */
 }
 
 /* Navigation */
