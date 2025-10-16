@@ -1,74 +1,81 @@
-/* Reset */
-body, h1, p, a {
+/* === GLOBAL STYLES === */
+body, h1, h2, p, a {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* === NAVBAR === */
-.top-nav {
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #333;
+}
+
+/* === HEADER === */
+.main-header {
+  background: linear-gradient(90deg, #0d3b66, #16a085);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #16a085;
-  padding: 12px 40px;
-  color: white;
+  padding: 10px 40px;
   flex-wrap: wrap;
 }
 
-.nav-left {
+.logo-section {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.logo-small {
-  width: 55px;
-  height: 55px;
+.logo {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.brand-name {
+.brand {
   font-size: 1.4em;
   font-weight: bold;
 }
 
-.nav-center a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-right {
+/* === NAVBAR === */
+.navbar {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 25px;
 }
 
-.phone {
-  font-weight: bold;
+.navbar a {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffe066;
 }
 
 .book-btn {
-  background-color: white;
-  color: #16a085;
+  background: #ffe066;
+  color: #0d3b66;
   padding: 8px 16px;
   border-radius: 6px;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 .book-btn:hover {
-  background: #f4f4f4;
+  background: #ffd43b;
 }
 
 /* === HERO === */
 .hero {
   position: relative;
-  height: 70vh;
   background: url("hero.jpg") center/cover no-repeat;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,8 +94,8 @@ body, h1, p, a {
   z-index: 2;
 }
 
-.hero h1 {
-  font-size: 2.8em;
+.hero-text h2 {
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
@@ -98,21 +105,20 @@ body, h1, p, a {
 }
 
 .cta-btn {
-  background-color: #e67e22;
+  background-color: #16a085;
   color: white;
   padding: 12px 24px;
   border-radius: 6px;
-  text-decoration: none;
   font-weight: bold;
 }
 
 .cta-btn:hover {
-  background-color: #cf6d17;
+  background-color: #0d3b66;
 }
 
 /* === FOOTER === */
 footer {
-  background: #16a085;
+  background: #0d3b66;
   color: white;
   text-align: center;
   padding: 20px;
