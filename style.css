@@ -47,28 +47,28 @@ nav a:hover {
     color: #e67e22;
 }
 
-/* Welcome Section */
-.welcome {
+/* Content Sections */
+.content, .welcome {
     text-align: center;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
-.welcome h2 {
+.content h2, .welcome h2 {
     color: #2980b9;
     margin-bottom: 10px;
 }
 
-.welcome .contact a {
+.contact a {
     color: #16a085;
     text-decoration: none;
 }
 
-.welcome .contact a:hover {
+.contact a:hover {
     text-decoration: underline;
 }
 
