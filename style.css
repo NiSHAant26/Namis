@@ -1,27 +1,22 @@
-/* === GENERAL STYLING === */
-body {
+/* Reset */
+body, h1, p, a {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  background: #fff;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-/* === TOP NAV BAR === */
+/* === NAVBAR === */
 .top-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #16a085;
-  padding: 12px 30px;
+  padding: 12px 40px;
   color: white;
   flex-wrap: wrap;
 }
 
-.top-nav-left {
+.nav-left {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -32,26 +27,21 @@ a {
   height: 55px;
   border-radius: 50%;
   object-fit: cover;
-  cursor: pointer;
 }
 
-.site-name {
-  color: white;
+.brand-name {
   font-size: 1.4em;
-  font-weight: 700;
+  font-weight: bold;
 }
 
-.top-nav-menu a {
+.nav-center a {
   color: white;
-  margin: 0 12px;
+  margin: 0 15px;
+  text-decoration: none;
   font-weight: 500;
 }
 
-.top-nav-menu a:hover {
-  text-decoration: underline;
-}
-
-.top-nav-right {
+.nav-right {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -62,7 +52,7 @@ a {
 }
 
 .book-btn {
-  background: white;
+  background-color: white;
   color: #16a085;
   padding: 8px 16px;
   border-radius: 6px;
@@ -71,117 +61,60 @@ a {
 }
 
 .book-btn:hover {
-  background: #f1f1f1;
+  background: #f4f4f4;
 }
 
-/* === HERO SECTION === */
-.hero-header {
-  background: url('hero.jpg') center/cover no-repeat;
-  text-align: center;
-  color: white;
+/* === HERO === */
+.hero {
   position: relative;
   height: 70vh;
+  background: url("hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
 }
 
-.hero-header::after {
-  content: "";
+.overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.45);
 }
 
-.hero-content {
+.hero-text {
   position: relative;
   z-index: 2;
 }
 
-.hero-header h1 {
+.hero h1 {
   font-size: 2.8em;
   margin-bottom: 10px;
 }
 
-.hero-slogan {
+.slogan {
   font-size: 1.3em;
   margin-bottom: 20px;
 }
 
-.cta-button-hero {
-  background: #e67e22;
+.cta-btn {
+  background-color: #e67e22;
   color: white;
-  padding: 12px 25px;
+  padding: 12px 24px;
   border-radius: 6px;
+  text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
 }
 
-.cta-button-hero:hover {
-  background: #cf6d17;
-}
-
-/* === INTRO SECTION === */
-.intro {
-  text-align: center;
-  padding: 70px 20px;
-  background: #f8f8f8;
-}
-
-.intro h2 {
-  font-size: 2em;
-  margin-bottom: 15px;
-  color: #16a085;
-}
-
-.intro p {
-  max-width: 700px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-}
-
-.cta-button {
-  background: #16a085;
-  color: white;
-  padding: 10px 22px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.cta-button:hover {
-  background: #13856e;
+.cta-btn:hover {
+  background-color: #cf6d17;
 }
 
 /* === FOOTER === */
 footer {
-  text-align: center;
   background: #16a085;
   color: white;
-  padding: 25px 10px;
-}
-
-.footer-contact {
+  text-align: center;
+  padding: 20px;
   font-size: 0.9em;
-  margin-top: 8px;
-}
-
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .top-nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .top-nav-menu, .top-nav-right {
-    margin-top: 10px;
-  }
-
-  .hero-header {
-    height: 60vh;
-  }
-
-  .hero-header h1 {
-    font-size: 2em;
-  }
 }
