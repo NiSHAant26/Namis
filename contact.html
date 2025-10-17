@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Namis Cleaning Services</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Namis Cleaning Services</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Top bar -->
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <span>📞 0435176269</span>
-        </div>
-        <div class="top-bar-right">
-            <a href="services.html">Services</a>
-            <a href="contact.html">Book My Clean ➜</a>
-        </div>
+  <div class="top-bar">
+    <div class="container">
+      <p>📞 +61 435 176 269</p>
+      <a href="contact.html" class="btn-book">Book My Clean ➜</a>
     </div>
+  </div>
 
-    <!-- Header -->
-    <header>
-        <img src="logo.png" alt="Namis Cleaning Services Logo" class="logo">
+  <header>
+    <div class="container nav">
+      <div class="logo-section">
+        <a href="index.html"><img src="logo.png" class="logo" alt="Logo"></a>
         <h1>Namis Cleaning Services</h1>
-        <p class="tagline">Shine Bright, Live Right ✨</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+    <p class="slogan">Shine Bright, Live Right ✨</p>
+  </header>
 
-    <main>
-        <section class="content">
-            <h2>Contact Us</h2>
-            <p>📞 0435176269</p>
-            <p>✉️ info@namiscleaning.com.au</p>
-            <p>We’d love to hear from you!</p>
-        </section>
-    </main>
+  <main class="content">
+    <section>
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you. Please call or send us a message below:</p>
 
-    <footer>
-        <p>&copy; 2025 Namis Cleaning Services. All rights reserved.</p>
-    </footer>
+      <form class="contact-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Phone" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Namis Cleaning Services | info@namiscleaning.com.au</p>
+  </footer>
 </body>
 </html>
