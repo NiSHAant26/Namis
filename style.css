@@ -67,9 +67,10 @@ a:hover {
 
 .tagline {
   font-size: 0.9rem;
-  color: var(--green);
+  color: skyblue;
   margin-top: -4px;
 }
+
 
 /* Navigation */
 .top-nav {
@@ -273,3 +274,4 @@ footer {
     box-shadow: none;
   }
 }
+
