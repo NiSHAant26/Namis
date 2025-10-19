@@ -1,11 +1,9 @@
-/* Body */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
 
-/* Colors */
 :root {
   --green: #00b894;
   --blue-dark: #0a3d62;
@@ -19,7 +17,7 @@ body {
   margin-top: -4px;
 }
 
-/* Header with gradient matching logo colors */
+/* Header */
 .main-header {
   background: linear-gradient(to right, var(--blue-dark), var(--blue-teal), var(--green));
   color: white;
@@ -75,7 +73,6 @@ body {
   color: #f0f0f0;
 }
 
-/* Book Button */
 .btn-book {
   background-color: var(--green);
   color: white !important;
@@ -89,7 +86,6 @@ body {
   background-color: #00a083;
 }
 
-/* Phone */
 .phone {
   color: #fff;
   font-weight: 600;
