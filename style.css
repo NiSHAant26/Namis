@@ -8,6 +8,7 @@ body {
 :root {
   --green: #00b894;
   --blue: #0a3d62;
+  --beige: #fffdf7;
 }
 
 /* Header Bar */
@@ -34,6 +35,9 @@ body {
   width: 55px;
   height: auto;
   margin-right: 10px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
 }
 
 .logo-section {
@@ -115,7 +119,7 @@ body {
   background-color: #00a083;
 }
 
-/* Services */
+/* Services preview (home page) */
 .services-preview {
   padding: 60px 0;
   text-align: center;
@@ -135,10 +139,79 @@ body {
   width: 280px;
 }
 
+/* Footer */
 footer {
   background-color: var(--blue);
   color: white;
   text-align: center;
   padding: 20px 0;
   margin-top: 50px;
+}
+
+/* --- Services Page --- */
+.service-hero {
+  background-color: var(--beige);
+  text-align: center;
+  padding: 80px 20px 40px;
+  color: var(--blue);
+}
+
+.service-hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.service-hero p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.services-list {
+  background-color: var(--beige);
+  padding: 50px 0;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #fff;
+  border: 2px solid var(--green);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Add Book Button under each service (optional) */
+.service-card .btn-book {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--green);
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-card .btn-book:hover {
+  background-color: #00a083;
 }
