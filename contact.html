@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Namis Cleaning Services</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="top-bar">
-    <div class="container">
-      <p>📞 +61 435 176 269</p>
-      <a href="contact.html" class="btn-book">Book My Clean ➜</a>
-    </div>
-  </div>
-
-  <header>
-    <div class="container nav">
+  <!-- HEADER: same -->
+  <header class="main-header">
+    <div class="container header-flex">
       <div class="logo-section">
-        <a href="index.html"><img src="logo.png" class="logo" alt="Logo"></a>
-        <h1>Namis Cleaning Services</h1>
+        <a href="index.html"><img src="logo.png" class="logo" /></a>
+        <div>
+          <h1 class="brand-name">Namis Cleaning Services</h1>
+          <p class="tagline">Shine Bright, Live Right ✨</p>
+        </div>
       </div>
-      <nav>
+      <nav class="top-nav">
         <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="services.html">Services ▼</a>
+          <div class="dropdown-content">
+            <a href="services.html#regular">Regular Cleaning</a>
+            <a href="services.html#deep">Deep Cleaning</a>
+            <a href="services.html#end-of-lease">End of Lease</a>
+          </div>
+        </div>
         <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-book">Book My Clean</a>
+        <span class="phone">📞 +61 435 176 269</span>
       </nav>
     </div>
-    <p class="slogan">Shine Bright, Live Right ✨</p>
   </header>
 
-  <main class="content">
-    <section>
-      <h2>Get in Touch</h2>
-      <p>We’d love to hear from you. Please call or send us a message below:</p>
-
-      <form class="contact-form">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Phone" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
+  <main>
+    <section class="content" style="padding: 60px 20px; text-align: center;">
+      <h2>Contact Us</h2>
+      <form style="max-width: 500px; margin: 0 auto; text-align: left;">
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" required style="width:100%; padding:8px; margin:5px 0;">
+        <label>Email</label>
+        <input type="email" placeholder="Your Email" required style="width:100%; padding:8px; margin:5px 0;">
+        <label>Message</label>
+        <textarea placeholder="Your Message" required style="width:100%; padding:8px; margin:5px 0;"></textarea>
+        <button type="submit" class="btn-primary" style="margin-top:10px;">Send Message</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Namis Cleaning Services | info@namiscleaning.com.au</p>
+    <p>&copy; 2025 Namis Cleaning Services. All rights reserved.</p>
   </footer>
 </body>
 </html>
