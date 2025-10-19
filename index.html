@@ -1,27 +1,77 @@
-<header class="main-header">
-  <div class="container header-flex">
-    <div class="logo-section">
-      <a href="index.html"><img src="logo.png" alt="Namis Cleaning Services Logo" class="logo"></a>
-      <h1 class="brand-name">Namis Cleaning Services</h1>
-    </div>
-
-    <nav class="top-nav">
-      <div class="dropdown">
-        <a href="#" class="dropbtn">Services ▾</a>
-        <div class="dropdown-content">
-          <a href="#">Regular Cleaning</a>
-          <a href="#">Deep Cleaning</a>
-          <a href="#">End of Lease Cleaning</a>
-          <a href="#">Move-in Cleaning</a>
-          <a href="#">General Cleaning</a>
-          <a href="#">Apartment Cleaning</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namis Cleaning Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-flex">
+      <div class="logo-section">
+        <a href="index.html"><img src="logo.png" alt="Namis Cleaning Services Logo" class="logo"></a>
+        <div>
+          <h1 class="brand-name">Namis Cleaning Services</h1>
+          <p class="tagline">Shine Bright, Live Right ✨</p>
         </div>
       </div>
 
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <span class="phone">📞 +61 435 176 269</span>
-      <a href="#" class="btn-book">Book My Clean</a>
-    </nav>
-  </div>
-</header>
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <a href="services.html" class="dropbtn">Services ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Regular Cleaning</a>
+            <a href="#">Deep Cleaning</a>
+            <a href="#">End of Lease Cleaning</a>
+            <a href="#">Move-in Cleaning</a>
+            <a href="#">General Cleaning</a>
+            <a href="#">Apartment Cleaning</a>
+          </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+        <span class="phone">📞 +61 435 176 269</span>
+        <a href="#" class="btn-book">Book My Clean</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="hero.jpg" alt="Cleaning Service" class="hero-img">
+    <div class="hero-text">
+      <h2>Professional, Reliable & Affordable Cleaning Services</h2>
+      <a href="#" class="btn-primary">Book My Clean</a>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="services-preview">
+    <h2>Our Popular Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Regular Cleaning</h3>
+        <p>Keep your home spotless with our routine cleaning service.</p>
+      </div>
+      <div class="service-card">
+        <h3>Deep Cleaning</h3>
+        <p>Get a thorough cleaning for a healthier living space.</p>
+      </div>
+      <div class="service-card">
+        <h3>End of Lease Cleaning</h3>
+        <p>Move out stress-free with our detailed end-of-lease cleaning.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Namis Cleaning Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
