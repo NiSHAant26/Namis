@@ -3,6 +3,12 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
+/* Tagline Style */
+.tagline {
+  font-size: 0.9rem;
+  color: var(--green);
+  margin-top: -4px;
+}
 
 /* Colors */
 :root {
@@ -215,3 +221,4 @@ footer {
 .service-card .btn-book:hover {
   background-color: #00a083;
 }
+
