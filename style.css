@@ -1,7 +1,11 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   color: #222;
+  line-height: 1.6;
 }
 
 :root {
@@ -10,14 +14,19 @@ body {
   --blue-teal: #00796b;
 }
 
-/* Tagline */
-.tagline {
-  font-size: 0.9rem;
-  color: var(--green);
-  margin-top: -4px;
+/* Links */
+a {
+  text-decoration: none;
 }
 
-/* Header */
+a:hover {
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+/* =======================
+   HEADER
+======================= */
 .main-header {
   background: linear-gradient(to right, var(--blue-dark), var(--blue-teal), var(--green));
   color: white;
@@ -38,6 +47,12 @@ body {
   flex-wrap: wrap;
 }
 
+/* Logo Section */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   width: 55px;
   height: 55px;
@@ -45,15 +60,15 @@ body {
   margin-right: 10px;
 }
 
-.logo-section {
-  display: flex;
-  align-items: center;
-}
-
 .brand-name {
-  color: white;
   font-size: 1.3rem;
   margin: 0;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--green);
+  margin-top: -4px;
 }
 
 /* Navigation */
@@ -61,16 +76,13 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
+  flex-wrap: wrap;
 }
 
 .top-nav a {
   color: white;
-  text-decoration: none;
   font-weight: 500;
-}
-
-.top-nav a:hover {
-  color: #f0f0f0;
+  padding: 5px 0;
 }
 
 .btn-book {
@@ -87,11 +99,12 @@ body {
 }
 
 .phone {
-  color: #fff;
   font-weight: 600;
 }
 
-/* Dropdown */
+/* =======================
+   DROPDOWN
+======================= */
 .dropdown {
   position: relative;
 }
@@ -112,18 +125,22 @@ body {
   color: #333;
   padding: 10px 15px;
   display: block;
-  text-decoration: none;
 }
 
 .dropdown-content a:hover {
   background-color: #f4f4f4;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Hover for desktop */
+@media(min-width: 768px){
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 
-/* Hero Section */
+/* =======================
+   HERO SECTION
+======================= */
 .hero {
   position: relative;
   text-align: center;
@@ -151,16 +168,23 @@ body {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s;
 }
 
 .btn-primary:hover {
   background-color: #00a083;
 }
 
-/* Services Grid */
+/* =======================
+   SERVICES GRID
+======================= */
 .services-preview {
-  padding: 60px 0;
+  padding: 60px 20px;
   text-align: center;
+}
+
+.services-preview h2 {
+  margin-bottom: 40px;
 }
 
 .service-grid {
@@ -175,13 +199,77 @@ body {
   padding: 20px;
   border-radius: 12px;
   width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Footer */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* =======================
+   ABOUT & CONTACT PAGES
+======================= */
+.content {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+form button {
+  background-color: var(--green);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #00a083;
+}
+
+/* =======================
+   FOOTER
+======================= */
 footer {
   background-color: var(--blue-dark);
   color: white;
   text-align: center;
   padding: 20px 0;
   margin-top: 50px;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media(max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dropdown-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+  }
 }
