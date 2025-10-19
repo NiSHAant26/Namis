@@ -67,8 +67,9 @@ a:hover {
 
 .tagline {
   font-size: 0.9rem;
-  color: #87CEEB; /* Sky Blue */
-  margin-top: -4px;
+  color: #00BFFF; /* Sky Blue */
+  margin-top: -6px;
+  margin- left:10px;
 }
 
 
@@ -275,5 +276,6 @@ footer {
     box-shadow: none;
   }
 }
+
 
 
