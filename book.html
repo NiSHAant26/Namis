@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Book My Clean — Namis Cleaning</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <!-- header: paste shared header -->
+  <main style="padding:40px 20px;max-width:800px;margin:0 auto;">
+    <h2>Book My Clean</h2>
+    <p>Fill out the form and we'll get back to you to confirm availability.</p>
+
+    <form id="bookingForm" action="mailto:info@namiscleaning.com.au" method="post" enctype="text/plain">
+      <label>
+        Full name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        Phone
+        <input type="tel" name="phone" required />
+      </label>
+
+      <label>
+        Service
+        <select name="service">
+          <option>General Clean</option>
+          <option>Deep Clean</option>
+          <option>End of Lease</option>
+          <option>Move-in</option>
+          <option>Apartment</option>
+        </select>
+      </label>
+
+      <label>
+        Preferred date
+        <input type="date" name="date" />
+      </label>
+
+      <label>
+        Notes
+        <textarea name="notes" rows="4"></textarea>
+      </label>
+
+      <div style="margin-top:12px;">
+        <button type="submit" class="btn-book">Request Booking</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>...footer...</footer>
+
+  <script>
+    // simple client-side validation to avoid empty mailto sends
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('bookingForm');
+      form.addEventListener('submit', (e) => {
+        const name = form.querySelector('[name=name]').value.trim();
+        const phone = form.querySelector('[name=phone]').value.trim();
+        if (!name || !phone) {
+          e.preventDefault();
+          alert('Please include your name and phone number so we can confirm your booking.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
