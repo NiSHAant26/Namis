@@ -1,152 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Namis Cleaning Services</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="scripts.js" defer></script>
-</head>
-<body>
-
-  <!-- HEADER -->
-  <header class="main-header">
-    <div class="container header-flex">
-      <div class="logo-section">
-        <a href="index.html">
-          <img src="logo.png" alt="Namis Cleaning Logo" class="logo" />
-        </a>
-        <div>
-          <h1 class="brand-name">Namis Cleaning Services</h1>
-          <p class="tagline">Shine Bright, Live Right ✨</p>
-        </div>
+<!-- START HEADER -->
+<header class="main-header">
+  <div class="container header-flex">
+    <div class="logo-section">
+      <a href="index.html" class="logo-link" aria-label="Namis Cleaning - Home">
+        <img src="logo.png" alt="Namis Cleaning Logo" class="logo" />
+      </a>
+      <div class="brand">
+        <h1 class="brand-name">Namis Cleaning Services</h1>
+        <p class="tagline">Shine Bright, Live Right ✨</p>
       </div>
-      <nav class="top-nav">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <a href="services.html">Services ▼</a>
-          <div class="dropdown-content">
-            <a href="services.html#regular">Regular Cleaning</a>
-            <a href="services.html#deep">Deep Cleaning</a>
-            <a href="services.html#end-of-lease">End of Lease</a>
-            <a href="services.html#move-in">Move-in</a>
-            <a href="services.html#general">General</a>
-            <a href="services.html#apartment">Apartment</a>
-          </div>
-        </div>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html" class="btn-book">Book My Clean</a>
-        <span class="phone">📞 +61 435 176 269</span>
-      </nav>
     </div>
-  </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <img src="hero.jpg" alt="Cleaning Hero" class="hero-img">
-    <div class="hero-text">
-      <h2>Professional Cleaning Services for Your Home</h2>
-      <a href="contact.html" class="btn-primary">Book Now</a>
-    </div>
-  </section>
+    <nav class="top-nav" role="navigation" aria-label="Main">
+      <a href="index.html">Landing</a>
+      <a href="home.html">Home</a>
 
-  <!-- SERVICES SECTION -->
-  <section class="services-section" style="padding: 60px 20px; text-align: center; background-color: #f7f7f7;">
-    <h2>★★★★★ TRUSTED BY 1000+ SYDNEY HOMES</h2>
-    <p style="max-width: 700px; margin: 10px auto 40px; font-size: 1.1rem;">
-      Sydney Cleaning Services We Offer.<br>
-      Namis Cleaning is a simple and transparent solution for all your cleaning needs in Sydney. Try our professional cleaners today and enjoy a clean living environment with no hidden fees or contracts. Cancel anytime.
-    </p>
-
-    <div class="service-cards">
-
-      <!-- GENERAL CLEAN -->
-      <div class="service-card">
-        <h3>General Clean</h3>
-        <p class="price">Starts from $152</p>
-        <p>Great for homes looking for a touch-up clean. Recommended if your home is regularly cleaned & maintained.</p>
-        <ul>
-          <li>Bedrooms</li>
-          <li>Bathrooms</li>
-          <li>Kitchen</li>
-          <li>Living/Dining</li>
-          <li>Vacuuming</li>
-          <li>Mopping</li>
-          <li>Dusting</li>
-          <li>Tidying</li>
-        </ul>
-        <div class="buttons">
-          <a href="contact.html" class="btn-primary">Book Now</a>
-          <a href="services.html#general" class="btn-secondary">Learn More</a>
+      <div class="dropdown">
+        <a href="services.html" class="drop-toggle">Services ▼</a>
+        <div class="dropdown-content" aria-hidden="true">
+          <a href="services.html#regular">Regular</a>
+          <a href="services.html#deep">Deep</a>
+          <a href="services.html#end-of-lease">End of Lease</a>
+          <a href="services.html#move-in">Move-in</a>
+          <a href="services.html#general">General</a>
+          <a href="services.html#apartment">Apartment</a>
         </div>
       </div>
 
-      <!-- DEEP CLEAN -->
-      <div class="service-card">
-        <h3>Deep Clean</h3>
-        <p class="price">Starts from $232</p>
-        <p>Recommended for homes not professionally cleaned in over 30 days. Perfect for first-time visits to prep for ongoing maintenance.</p>
-        <ul>
-          <li>Includes everything in General Clean PLUS:</li>
-          <li>Skirting Boards</li>
-          <li>Dust Cornices</li>
-          <li>Window Frames & Ledges*</li>
-          <li>Remove Cobwebs</li>
-          <li>Doors / Frames</li>
-        </ul>
-        <div class="buttons">
-          <a href="contact.html" class="btn-primary">Book Now</a>
-          <a href="services.html#deep" class="btn-secondary">Learn More</a>
-        </div>
-      </div>
+      <a href="about.html">About</a>
 
-      <!-- END OF LEASE -->
-      <div class="service-card">
-        <h3>End Of Lease</h3>
-        <p class="price">Starts from $432</p>
-        <p>Perfect for moving out of a rental property and needing your bond back. Also ideal for landlords putting a property on the market.</p>
-        <ul>
-          <li>Includes everything in General & Deep Clean PLUS:</li>
-          <li>Inside Windows</li>
-          <li>Inside Oven</li>
-          <li>Inside Cupboards</li>
-          <li>Wall Spot Cleaning</li>
-          <li>Range-Hood</li>
-        </ul>
-        <div class="buttons">
-          <a href="contact.html" class="btn-primary">Book Now</a>
-          <a href="services.html#end-of-lease" class="btn-secondary">Learn More</a>
-        </div>
-      </div>
+      <!-- BOOK button replaces Contact -->
+      <a href="book.html" class="btn-book">Book My Clean</a>
 
-      <!-- MOVE-IN -->
-      <div class="service-card">
-        <h3>Move-in Cleaning</h3>
-        <p>Prepare your new home for a fresh start.</p>
-        <div class="buttons">
-          <a href="contact.html" class="btn-primary">Book Now</a>
-          <a href="services.html#move-in" class="btn-secondary">Learn More</a>
-        </div>
-      </div>
+      <!-- Phone box -->
+      <a class="phone-box" href="tel:+61435176269" aria-label="Call +61 435 176 269">
+        <span class="phone-emoji">📞</span>
+        <span class="phone-number">+61 435 176 269</span>
+      </a>
 
-      <!-- APARTMENT -->
-      <div class="service-card">
-        <h3>Apartment Cleaning</h3>
-        <p>Expert cleaning services for apartments of all sizes.</p>
-        <div class="buttons">
-          <a href="contact.html" class="btn-primary">Book Now</a>
-          <a href="services.html#apartment" class="btn-secondary">Learn More</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Namis Cleaning Services. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+      <!-- mobile menu toggle (visible on small screens) -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+    </nav>
+  </div>
+</header>
+<!-- END HEADER -->
