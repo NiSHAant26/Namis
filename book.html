@@ -1,76 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Book My Clean — Namis Cleaning</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="scripts.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Namis Cleaning Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <!-- header: paste shared header -->
-  <main style="padding:40px 20px;max-width:800px;margin:0 auto;">
-    <h2>Book My Clean</h2>
-    <p>Fill out the form and we'll get back to you to confirm availability.</p>
+<body class="bg-gray-50">
 
-    <form id="bookingForm" action="mailto:info@namiscleaning.com.au" method="post" enctype="text/plain">
-      <label>
-        Full name
-        <input type="text" name="name" required />
-      </label>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-slate-800 via-teal-700 to-emerald-600 text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl font-bold mb-6">About Us</h1>
+      <p class="text-xl">Your trusted partner in professional home cleaning</p>
+    </div>
+  </section>
 
-      <label>
-        Email
-        <input type="email" name="email" required />
-      </label>
-
-      <label>
-        Phone
-        <input type="tel" name="phone" required />
-      </label>
-
-      <label>
-        Service
-        <select name="service">
-          <option>General Clean</option>
-          <option>Deep Clean</option>
-          <option>End of Lease</option>
-          <option>Move-in</option>
-          <option>Apartment</option>
-        </select>
-      </label>
-
-      <label>
-        Preferred date
-        <input type="date" name="date" />
-      </label>
-
-      <label>
-        Notes
-        <textarea name="notes" rows="4"></textarea>
-      </label>
-
-      <div style="margin-top:12px;">
-        <button type="submit" class="btn-book">Request Booking</button>
+  <!-- Our Story -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-xl shadow-lg p-8 md:p-12">
+        <h2 class="text-3xl font-bold mb-6 text-center">Our Story</h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Namis Cleaning Services has been providing professional home cleaning across Sydney for years. We
+          pride ourselves on reliability, trust, and quality service. Our mission is to make every home shine
+          bright — so you can live right.
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          We understand that your home is your sanctuary, and keeping it clean shouldn't be a burden. That's
+          why we've built a team of experienced, vetted professionals who treat every home with the care and
+          attention it deserves.
+        </p>
       </div>
-    </form>
-  </main>
 
-  <footer>...footer...</footer>
+      <!-- Features Grid -->
+      <div class="grid md:grid-cols-2 gap-8 mt-12">
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+          <img src="https://img.icons8.com/ios-filled/100/10B981/award.png" alt="Award Icon" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-2xl font-bold mb-3">Professional Excellence</h3>
+          <p class="text-gray-700">
+            Our team is trained to the highest standards, ensuring exceptional service every time.
+          </p>
+        </div>
 
-  <script>
-    // simple client-side validation to avoid empty mailto sends
-    document.addEventListener('DOMContentLoaded', () => {
-      const form = document.getElementById('bookingForm');
-      form.addEventListener('submit', (e) => {
-        const name = form.querySelector('[name=name]').value.trim();
-        const phone = form.querySelector('[name=phone]').value.trim();
-        if (!name || !phone) {
-          e.preventDefault();
-          alert('Please include your name and phone number so we can confirm your booking.');
-        }
-      });
-    });
-  </script>
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+          <img src="https://img.icons8.com/ios-filled/100/10B981/conference-call.png" alt="Users Icon" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-2xl font-bold mb-3">Trusted Team</h3>
+          <p class="text-gray-700">
+            All our cleaners are background-checked and insured for your peace of mind.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+          <img src="https://img.icons8.com/ios-filled/100/10B981/like.png" alt="Heart Icon" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-2xl font-bold mb-3">Customer First</h3>
+          <p class="text-gray-700">
+            Your satisfaction is our priority. We go above and beyond to exceed expectations.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+          <img src="https://img.icons8.com/ios-filled/100/10B981/shield.png" alt="Shield Icon" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-2xl font-bold mb-3">Quality Guaranteed</h3>
+          <p class="text-gray-700">
+            Not happy? We'll make it right. 100% satisfaction guaranteed or your money back.
+          </p>
+        </div>
+      </div>
+
+      <!-- Our Promise -->
+      <div class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl shadow-lg p-8 md:p-12 mt-12 text-center">
+        <h2 class="text-3xl font-bold mb-4">Our Promise</h2>
+        <p class="text-xl leading-relaxed">
+          We promise to deliver outstanding cleaning services with integrity, professionalism, and a genuine
+          commitment to making your home sparkle. No hidden fees, no contracts, just honest, quality
+          cleaning you can trust.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 </html>
