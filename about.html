@@ -1,25 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - Namis Cleaning</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <div id="header-placeholder"></div>
-  <script>
-    fetch("header.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("header-placeholder").innerHTML = data);
-  </script>
+import { Award, Users, Heart, Shield } from 'lucide-react';
 
-  <main style="padding: 40px; max-width: 800px; margin:auto;">
-    <h1>About Namis Cleaning</h1>
-    <p>We’re a local cleaning service in Sydney, committed to providing high-quality, reliable, and affordable cleaning solutions for homes and apartments. With a professional and friendly team, we ensure every space sparkles.</p>
-  </main>
+export default function About() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <section className="bg-gradient-to-r from-slate-800 via-teal-700 to-emerald-600 text-white py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl font-bold mb-6">About Us</h1>
+          <p className="text-xl">Your trusted partner in professional home cleaning</p>
+        </div>
+      </section>
 
-  <footer>© 2025 Namis Cleaning Services</footer>
-</body>
-</html>
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
+            <h2 className="text-3xl font-bold mb-6 text-center">Our Story</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Namis Cleaning Services has been providing professional home cleaning across Sydney for years. We
+              pride ourselves on reliability, trust, and quality service. Our mission is to make every home shine
+              bright — so you can live right.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              We understand that your home is your sanctuary, and keeping it clean shouldn't be a burden. That's
+              why we've built a team of experienced, vetted professionals who treat every home with the care and
+              attention it deserves.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mt-12">
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+              <Award className="w-16 h-16 text-emerald-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Professional Excellence</h3>
+              <p className="text-gray-700">
+                Our team is trained to the highest standards, ensuring exceptional service every time.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+              <Users className="w-16 h-16 text-emerald-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Trusted Team</h3>
+              <p className="text-gray-700">
+                All our cleaners are background-checked and insured for your peace of mind.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+              <Heart className="w-16 h-16 text-emerald-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Customer First</h3>
+              <p className="text-gray-700">
+                Your satisfaction is our priority. We go above and beyond to exceed expectations.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+              <Shield className="w-16 h-16 text-emerald-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Quality Guaranteed</h3>
+              <p className="text-gray-700">
+                Not happy? We'll make it right. 100% satisfaction guaranteed or your money back.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl shadow-lg p-8 md:p-12 mt-12 text-center">
+            <h2 className="text-3xl font-bold mb-4">Our Promise</h2>
+            <p className="text-xl leading-relaxed">
+              We promise to deliver outstanding cleaning services with integrity, professionalism, and a genuine
+              commitment to making your home sparkle. No hidden fees, no contracts, just honest, quality
+              cleaning you can trust.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
