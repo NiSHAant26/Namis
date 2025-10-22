@@ -1,46 +1,50 @@
-<!-- START HEADER -->
-<header class="main-header">
-  <div class="container header-flex">
-    <div class="logo-section">
-      <a href="index.html" class="logo-link" aria-label="Namis Cleaning - Home">
-        <img src="logo.png" alt="Namis Cleaning Logo" class="logo" />
-      </a>
-      <div class="brand">
-        <h1 class="brand-name">Namis Cleaning Services</h1>
-        <p class="tagline">Shine Bright, Live Right ✨</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Namis Cleaning — Landing</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+
+  <!-- header: paste shared header here -->
+  <!-- START HEADER (copy the header snippet from Section 2) -->
+  <!-- ... header pasted ... -->
+
+  <!-- HERO / Landing -->
+  <section class="hero" style="position:relative;text-align:center;color:#fff;">
+    <img src="hero.jpg" alt="Clean home" class="hero-img" style="width:100%;height:420px;object-fit:cover;filter:brightness(60%)">
+    <div class="hero-text" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+      <h2 style="font-size:2rem;margin:0 0 12px;">Professional Cleaning for Sydney Homes</h2>
+      <p style="max-width:700px;margin:0 auto 18px;">Quick, reliable, and professional cleaning — book in 60 seconds. Bond-back End of Lease, Deep Cleans, Regular Service.</p>
+      <a href="book.html" class="btn-primary" style="background:var(--green);padding:12px 20px;border-radius:24px;color:#fff;text-decoration:none;font-weight:700;">Book My Clean</a>
+      <a href="home.html" style="margin-left:12px;color:#fff;text-decoration:underline;">More details</a>
+    </div>
+  </section>
+
+  <!-- QUICK SERVICE CARDS -->
+  <section style="padding:48px 20px;text-align:center;">
+    <h3>Our most popular services</h3>
+    <div class="service-grid" style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:20px;">
+      <div class="service-card" style="width:240px">
+        <h4>General Clean</h4>
+        <p>From $152 — Bedrooms, kitchen, bathrooms, vacuum & mop.</p>
+      </div>
+      <div class="service-card" style="width:240px">
+        <h4>Deep Clean</h4>
+        <p>From $232 — detailed scouring of corners, skirting, frames.</p>
+      </div>
+      <div class="service-card" style="width:240px">
+        <h4>End of Lease</h4>
+        <p>From $432 — inside oven/windows, cupboards, bond-ready.</p>
       </div>
     </div>
+  </section>
 
-    <nav class="top-nav" role="navigation" aria-label="Main">
-      <a href="index.html">Landing</a>
-      <a href="home.html">Home</a>
-
-      <div class="dropdown">
-        <a href="services.html" class="drop-toggle">Services ▼</a>
-        <div class="dropdown-content" aria-hidden="true">
-          <a href="services.html#regular">Regular</a>
-          <a href="services.html#deep">Deep</a>
-          <a href="services.html#end-of-lease">End of Lease</a>
-          <a href="services.html#move-in">Move-in</a>
-          <a href="services.html#general">General</a>
-          <a href="services.html#apartment">Apartment</a>
-        </div>
-      </div>
-
-      <a href="about.html">About</a>
-
-      <!-- BOOK button replaces Contact -->
-      <a href="book.html" class="btn-book">Book My Clean</a>
-
-      <!-- Phone box -->
-      <a class="phone-box" href="tel:+61435176269" aria-label="Call +61 435 176 269">
-        <span class="phone-emoji">📞</span>
-        <span class="phone-number">+61 435 176 269</span>
-      </a>
-
-      <!-- mobile menu toggle (visible on small screens) -->
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
-    </nav>
-  </div>
-</header>
-<!-- END HEADER -->
+  <footer style="background:var(--blue-dark);color:#fff;text-align:center;padding:20px;margin-top:40px;">
+    <p>&copy; 2025 Namis Cleaning Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
