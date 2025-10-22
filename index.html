@@ -1,50 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Namis Cleaning — Landing</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namis Cleaning Services</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="scripts.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- header: paste shared header here -->
-  <!-- START HEADER (copy the header snippet from Section 2) -->
-  <!-- ... header pasted ... -->
+  <!-- HEADER AUTO LOAD -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+  </script>
 
-  <!-- HERO / Landing -->
-  <section class="hero" style="position:relative;text-align:center;color:#fff;">
-    <img src="hero.jpg" alt="Clean home" class="hero-img" style="width:100%;height:420px;object-fit:cover;filter:brightness(60%)">
-    <div class="hero-text" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
-      <h2 style="font-size:2rem;margin:0 0 12px;">Professional Cleaning for Sydney Homes</h2>
-      <p style="max-width:700px;margin:0 auto 18px;">Quick, reliable, and professional cleaning — book in 60 seconds. Bond-back End of Lease, Deep Cleans, Regular Service.</p>
-      <a href="book.html" class="btn-primary" style="background:var(--green);padding:12px 20px;border-radius:24px;color:#fff;text-decoration:none;font-weight:700;">Book My Clean</a>
-      <a href="home.html" style="margin-left:12px;color:#fff;text-decoration:underline;">More details</a>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Professional Cleaning That Shines</h1>
+      <p>Trusted, Reliable & Affordable Home Cleaning in Sydney</p>
+      <a href="book.html" class="btn-book">Book My Clean</a>
     </div>
   </section>
 
-  <!-- QUICK SERVICE CARDS -->
-  <section style="padding:48px 20px;text-align:center;">
-    <h3>Our most popular services</h3>
-    <div class="service-grid" style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:20px;">
-      <div class="service-card" style="width:240px">
-        <h4>General Clean</h4>
-        <p>From $152 — Bedrooms, kitchen, bathrooms, vacuum & mop.</p>
+  <!-- SERVICES SUMMARY -->
+  <section class="services-summary">
+    <h2>Our Top Cleaning Services</h2>
+    <div class="service-list">
+      <div class="service-card">
+        <h3>Regular Cleaning</h3>
+        <p>Keep your home spotless with weekly or fortnightly cleans.</p>
       </div>
-      <div class="service-card" style="width:240px">
-        <h4>Deep Clean</h4>
-        <p>From $232 — detailed scouring of corners, skirting, frames.</p>
+      <div class="service-card">
+        <h3>Deep Cleaning</h3>
+        <p>For a thorough clean to make everything fresh and new.</p>
       </div>
-      <div class="service-card" style="width:240px">
-        <h4>End of Lease</h4>
-        <p>From $432 — inside oven/windows, cupboards, bond-ready.</p>
+      <div class="service-card">
+        <h3>End of Lease</h3>
+        <p>Bond-back guaranteed end-of-lease cleaning service.</p>
       </div>
     </div>
   </section>
 
-  <footer style="background:var(--blue-dark);color:#fff;text-align:center;padding:20px;margin-top:40px;">
-    <p>&copy; 2025 Namis Cleaning Services. All rights reserved.</p>
+  <footer>
+    © 2025 Namis Cleaning Services | All Rights Reserved
   </footer>
+
 </body>
 </html>
