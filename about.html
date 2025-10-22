@@ -3,55 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Namis Cleaning Services</title>
+  <title>About Us - Namis Cleaning</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- HEADER: same as index.html -->
-  <header class="main-header">
-    <div class="container header-flex">
-      <div class="logo-section">
-        <a href="index.html">
-          <img src="logo.png" alt="Namis Cleaning Logo" class="logo" />
-        </a>
-        <div>
-          <h1 class="brand-name">Namis Cleaning Services</h1>
-          <p class="tagline">Shine Bright, Live Right ✨</p>
-        </div>
-      </div>
-      <nav class="top-nav">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <a href="services.html">Services ▼</a>
-          <div class="dropdown-content">
-            <a href="services.html#regular">Regular Cleaning</a>
-            <a href="services.html#deep">Deep Cleaning</a>
-            <a href="services.html#end-of-lease">End of Lease</a>
-          </div>
-        </div>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html" class="btn-book">Book My Clean</a>
-        <span class="phone">📞 +61 435 176 269</span>
-      </nav>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+  </script>
 
-  <!-- ABOUT SECTION -->
-  <main>
-    <section class="content" style="padding: 80px 20px; text-align: center;">
-      <h2>About Us</h2>
-      <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem; line-height: 1.6;">
-        Namis Cleaning Services has been providing professional home cleaning across our area for years.
-        We pride ourselves on reliability, trust, and quality service. Our mission is to make every home
-        shine bright — so you can live right.
-      </p>
-    </section>
+  <main style="padding: 40px; max-width: 800px; margin:auto;">
+    <h1>About Namis Cleaning</h1>
+    <p>We’re a local cleaning service in Sydney, committed to providing high-quality, reliable, and affordable cleaning solutions for homes and apartments. With a professional and friendly team, we ensure every space sparkles.</p>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Namis Cleaning Services. All rights reserved.</p>
-  </footer>
+  <footer>© 2025 Namis Cleaning Services</footer>
 </body>
 </html>
