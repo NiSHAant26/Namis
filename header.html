@@ -1,33 +1,46 @@
-<div class="main-header">
+<!-- START HEADER -->
+<header class="main-header">
   <div class="container header-flex">
     <div class="logo-section">
-      <a href="index.html">
-        <img src="logo.png" alt="Namis Cleaning Logo" class="logo">
+      <a href="index.html" class="logo-link" aria-label="Namis Cleaning - Home">
+        <img src="logo.png" alt="Namis Cleaning Logo" class="logo" />
       </a>
-      <div>
+      <div class="brand">
         <h1 class="brand-name">Namis Cleaning Services</h1>
         <p class="tagline">Shine Bright, Live Right ✨</p>
       </div>
     </div>
 
-    <nav class="top-nav">
-      <a href="index.html">Home</a>
+    <nav class="top-nav" role="navigation" aria-label="Main">
+      <a href="index.html">Landing</a>
+      <a href="home.html">Home</a>
+
       <div class="dropdown">
-        <a href="services.html">Services ▼</a>
-        <div class="dropdown-content">
-          <a href="services.html#regular">Regular Cleaning</a>
-          <a href="services.html#deep">Deep Cleaning</a>
-          <a href="services.html#end-of-lease">End of Lease Cleaning</a>
-          <a href="services.html#move-in">Move-in Cleaning</a>
-          <a href="services.html#general">General Cleaning</a>
-          <a href="services.html#apartment">Apartment Cleaning</a>
-          <!-- You can add more services here -->
+        <a href="services.html" class="drop-toggle">Services ▼</a>
+        <div class="dropdown-content" aria-hidden="true">
+          <a href="services.html#regular">Regular</a>
+          <a href="services.html#deep">Deep</a>
+          <a href="services.html#end-of-lease">End of Lease</a>
+          <a href="services.html#move-in">Move-in</a>
+          <a href="services.html#general">General</a>
+          <a href="services.html#apartment">Apartment</a>
         </div>
       </div>
+
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn-book">Book My Clean</a>
-      <span class="phone">📞 +61 435 176 269</span>
+
+      <!-- BOOK button replaces Contact -->
+      <a href="book.html" class="btn-book">Book My Clean</a>
+
+      <!-- Phone box -->
+      <a class="phone-box" href="tel:+61435176269" aria-label="Call +61 435 176 269">
+        <span class="phone-emoji">📞</span>
+        <span class="phone-number">+61 435 176 269</span>
+      </a>
+
+      <!-- mobile menu toggle (visible on small screens) -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
     </nav>
   </div>
-</div>
+</header>
+<!-- END HEADER -->
