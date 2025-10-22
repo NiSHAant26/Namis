@@ -3,51 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Namis Cleaning Services</title>
+  <title>Namis Cleaning Services | Sydney’s Trusted Cleaners</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <!-- ===== HEADER ===== -->
+  <header class="main-header">
+    <div class="container header-flex">
+      <div class="logo-section">
+        <a href="index.html" class="logo-link">
+          <img src="logo.png" alt="Namis Cleaning Logo" class="logo">
+        </a>
+        <div class="brand">
+          <h1 class="brand-name">Namis Cleaning Services</h1>
+          <p class="tagline">Shine Bright, Live Right ✨</p>
+        </div>
+      </div>
 
-  <!-- HEADER AUTO LOAD -->
-  <div id="header-placeholder"></div>
-  <script>
-    fetch("header.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("header-placeholder").innerHTML = data);
-  </script>
+      <nav class="top-nav">
+        <a href="index.html" class="active">Landing</a>
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+          <a href="services.html" class="drop-toggle">Services ▼</a>
+          <div class="dropdown-content">
+            <a href="services.html#regular">Regular</a>
+            <a href="services.html#deep">Deep</a>
+            <a href="services.html#end-of-lease">End of Lease</a>
+            <a href="services.html#move-in">Move-in</a>
+            <a href="services.html#general">General</a>
+            <a href="services.html#apartment">Apartment</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="book.html" class="btn-book">Book My Clean</a>
 
-  <!-- HERO SECTION -->
+        <a href="tel:+61435176269" class="phone-box">
+          📞 <span>+61 435 176 269</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Professional Cleaning That Shines</h1>
-      <p>Trusted, Reliable & Affordable Home Cleaning in Sydney</p>
-      <a href="book.html" class="btn-book">Book My Clean</a>
+    <img src="hero.jpg" alt="Professional cleaner working" class="hero-img" />
+    <div class="hero-text">
+      <h2>Your Home, Professionally Cleaned in Sydney</h2>
+      <p>Trusted by over 1,000 happy homeowners across Sydney</p>
+      <a href="book.html" class="btn-primary">Book My Clean</a>
     </div>
   </section>
 
-  <!-- SERVICES SUMMARY -->
-  <section class="services-summary">
-    <h2>Our Top Cleaning Services</h2>
-    <div class="service-list">
-      <div class="service-card">
+  <!-- ===== SERVICES PREVIEW ===== -->
+  <section class="services-preview">
+    <h2>Our Most Popular Services</h2>
+    <div class="service-grid">
+      <article class="service-card">
         <h3>Regular Cleaning</h3>
-        <p>Keep your home spotless with weekly or fortnightly cleans.</p>
-      </div>
-      <div class="service-card">
+        <p>Keep your home spotless weekly or fortnightly.</p>
+      </article>
+      <article class="service-card">
         <h3>Deep Cleaning</h3>
-        <p>For a thorough clean to make everything fresh and new.</p>
-      </div>
-      <div class="service-card">
-        <h3>End of Lease</h3>
-        <p>Bond-back guaranteed end-of-lease cleaning service.</p>
+        <p>Perfect for homes needing extra attention.</p>
+      </article>
+      <article class="service-card">
+        <h3>End of Lease Cleaning</h3>
+        <p>Get your bond back with a professional clean.</p>
+      </article>
+    </div>
+    <a href="services.html" class="btn-secondary">View All Services</a>
+  </section>
+
+  <!-- ===== TRUST SECTION ===== -->
+  <section class="trust">
+    <div class="container">
+      <h2>Why Sydney Trusts Namis Cleaning</h2>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <h3>✅ Reliable & On-Time</h3>
+          <p>We arrive when we say we will — no waiting around.</p>
+        </div>
+        <div class="trust-item">
+          <h3>🌿 Eco-Friendly</h3>
+          <p>We use safe, non-toxic cleaning products for your family.</p>
+        </div>
+        <div class="trust-item">
+          <h3>⭐ 5-Star Reviews</h3>
+          <p>Loved by over 1,000 Sydney households.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    © 2025 Namis Cleaning Services | All Rights Reserved
-  </footer>
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <h2>Ready to Experience a Better Clean?</h2>
+    <p>Book your clean today — fast, easy, and professional.</p>
+    <a href="book.html" class="btn-primary large">Book My Clean</a>
+  </section>
 
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Namis Cleaning Services. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
